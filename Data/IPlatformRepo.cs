@@ -8,6 +8,7 @@ namespace PlatformService.Data
         bool SaveChanges();
 
         IEnumerable<Platform> GetAllPlatforms();
-        Platform GetPlatformById();
+        Platform GetPlatformById(int id);
+        void CreatePlatform(Platform plat);
     }
 }
