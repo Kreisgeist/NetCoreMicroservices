@@ -1,17 +1,15 @@
 using AutoMapper;
-using PlatformService.Models;
 using PlatformService.Dtos;
+using PlatformService.Models;
 
 namespace PlatformService.Profiles
 {
-    public class PlatformProfile : Profile
+    public class PlatformsProfile : Profile
     {
-        public void PlatformsProfile()
+        public PlatformsProfile()
         {
-            // Source -> Target
-            // It maps the data in our model, to our DTO
-            CreateMap<Platform,PlatformReadDto>();
-            CreateMap<PlatformCreateDto,Platform>();
+            CreateMap<Platform, PlatformReadDto>();
+            CreateMap<PlatformCreateDto, Platform>();
         }
     }
 }

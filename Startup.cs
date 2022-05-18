@@ -29,7 +29,6 @@ namespace PlatformService
         {
             services.AddDbContext<AppDbContext>(opt => 
                 opt.UseInMemoryDatabase("InMem"));
-                
             services.AddScoped<IPlatformRepo, PlatformRepo>();
             services.AddControllers();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -59,7 +58,7 @@ namespace PlatformService
                 endpoints.MapControllers();
             });
 
-            PrepDb.PrepPupulation(app);
+            PrepDb.PrepPopulation(app);
 
         }
     }

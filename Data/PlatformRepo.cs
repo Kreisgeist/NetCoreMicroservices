@@ -16,7 +16,7 @@ namespace PlatformService.Data
 
         public void CreatePlatform(Platform plat)
         {
-            if(plat == null)
+            if (plat == null)
             {
                 throw new ArgumentNullException(nameof(plat));
             }
@@ -36,7 +36,7 @@ namespace PlatformService.Data
 
         public bool SaveChanges()
         {
-            return (_context.SaveChanges() >= 0); 
+            return (_context.SaveChanges() >= 0);
         }
     }
 }
